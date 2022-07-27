@@ -14,11 +14,13 @@ public class JpaMain {
         tx.begin();
 
         try{
-            Member member = new Member(200L, "Jordan");
+//            Member member = new Member(200L, "Jordan");
+            Member member = new Member();
+            member.setName("홍길동");
             em.persist(member);
 
-            em.flush();
-            System.out.println("=====");
+//            em.flush();
+//            System.out.println("=====");
 
 //            em.detach(member);
 //            em.clear();
